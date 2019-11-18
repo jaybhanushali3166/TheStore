@@ -1,0 +1,7 @@
+.padding{
+    margin-top: 2%;
+}
+.sticky{
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="padding tabs is-centered">
+    <ul>
+      <ng-container *ngFor='let t of Tabs'>
+        <li>
+          <a (click)='onTabSelect(t.value)'>
+            <span class="icon is-small"><i class="fas {{t.icon}}" aria-hidden="true"></i></span>
+            <span>{{t.name}}</span>
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <app-videos *ngIf='tab=="videos"'></app-videos>
+  <app-books *ngIf='tab=="books"'></app-books>
+  <app-pictures *ngIf='tab=="pictures"'></app-pictures>
+</div>

@@ -1,0 +1,7 @@
+.level-item{
+    margin-top:2%;
+}
+.sticky{
+    position: fixed;
+    overflow: auto;
+}
