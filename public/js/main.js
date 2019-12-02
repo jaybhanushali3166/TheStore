@@ -1,5 +1,43 @@
 $(document).ready(function() {
 
+	// View More 
+
+	$(function() {
+		$(".single-book").slice(0,4).show();
+		var size = $(".single-book").size();
+		var show = 4;
+		console.log("size:",size);
+
+		$('#items li:lt('+show+')').show();
+		
+		$('#viewless').hide();
+	
+		 // select the first ten
+		$("#viewmore").click(function(e) { 
+			$('#viewless').show();
+			$('#viewmore').hide();
+
+
+			show= (show+4 <= size) ? show+4 : size;
+			$('#items li:lt('+show+')').show();
+			// click event for load more
+		  e.preventDefault();
+		  $(".single-book:hidden").slice(0, 4).show(300); // select next 4 hidden divs and show them
+		//   if ($(".single-book:hidden").length == 0) 
+		//   { 
+		// 	  // check if any hidden divs still exist
+		//   }
+		});
+
+		$('#viewless').click( function(e){
+			e.preventDefault();
+			show=(show-4<0) ? 4 : show-4;
+			$('#items li').not(':lt('+show+')').hide();
+			// $(".single-book:hidden").slice(0, 4).hide(300); 			
+
+		})
+	  });
+  
 
 	/* Navigation burger onclick side navigation show */
 	$('.burger-container').on('click', function() {
