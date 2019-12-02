@@ -38,6 +38,19 @@
     .site-container {
       width: 90%; } }
 
+/* media query for dicumentary */
+@media (max-width: 1600px) {
+  .doc {
+    height: 500px;
+   }
+  
+  }
+
+  @media (max-width: 668px) {
+    .doc{
+      height: 200px; } 
+    }
+    
 .universal-h2 {
   font-size: 48px;
   text-align: center;
