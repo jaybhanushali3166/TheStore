@@ -23,7 +23,36 @@
 .books .single-book{
   display: none;
 
+
 }
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* image hover */
+#set{
+  height: 460px; 
+  width: 350px;
+  border: 8px solid white;
+}
+
+/* img.hoverImages {
+  margin:20px;
+  padding: 3px;
+  /* outline:2px solid #DDD; */
+  /* border:#a1a1a1; */
+  /* box-shadow: 5px 10px 8px #888888; */
+  /* float:left;
+	-webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out; */
+/* } */ 
+/* 
+img.hoverImages:hover {
+	cursor:pointer;
+    margin-top: 5px;
+} */
 /* Colors */
 /* Universal style */
 * {
@@ -225,7 +254,17 @@
         .top-banner__inner .top-banner__text-down .top-banner__h2 {
           margin-bottom: 0; } }
   .top-banner__inner .top-banner__image {
-    font-size: 0; }
+   
+    font-size: 0; 
+   
+  }
+  /* .top-banner__image{
+    background-image: url('../images/Potrait\ GF\ Ajgaonkar.jpg');
+    height: 460px;
+    width: 350px;
+    box-shadow: 0 0 8px 8px black inset;
+
+  } */
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__image {
         width: 50%; }
@@ -236,6 +275,10 @@
         width: 65%;
         margin-bottom: 20px; } }
   @media (max-width: 520px) {
+    #set{
+      height: 90%;
+      width:90%;
+    }
     .top-banner__inner {
       flex-direction: column; } }
 
