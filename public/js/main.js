@@ -1,6 +1,15 @@
 $(document).ready(function() {
 
 	// View More 
+	// $('.main-navigation__ul li a').click(function(e) {
+	// 	console.log("hello:",e);
+	
+	// 	$(".burger-container").toggle('change');
+	// 	console.log("event :",e.click);
+		
+		
+        //e.preventDefault();
+    // });
 
 	$(function() {
 		$(".single-book").slice(0,4).show();
@@ -38,12 +47,16 @@ $(document).ready(function() {
 	$('.burger-container').on('click', function() {
 		$('.main-navigation').toggle('slow');
 
+
 		if($('#myBtn').hasClass('change')) {
 			$('body').addClass('stop-scroll');
 		} else {
 			$('body').removeClass('stop-scroll');
+			
 		}
 	});
+
+	$('#')
 
 
 	/* About me slider */

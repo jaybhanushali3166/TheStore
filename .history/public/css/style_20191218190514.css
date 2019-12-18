@@ -79,7 +79,7 @@ p {
   overflow-x: hidden;
 } */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 5px;
   background: transparent; 
 }
@@ -446,7 +446,7 @@ img.hoverImages:hover {
         margin-top: 0; } }
   .top-banner__inner .top-banner__text-down {
     margin-bottom: 20px;
-    padding-left: 0; }
+    padding-left: 27%; }
     .top-banner__inner .top-banner__text-down .top-banner__h2 {
       margin-bottom: 10px; }
       @media (max-width: 768px) {
