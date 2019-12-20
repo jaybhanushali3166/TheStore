@@ -104,7 +104,7 @@ p {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
-  
+  height: 585px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -187,7 +187,6 @@ a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
-  
 }
 .row__inner {
   transition: 450ms -webkit-transform;
@@ -1026,16 +1025,12 @@ img.hoverImages:hover {
       .fh5co-quotes p {
         width: 90%; } }
 
-        .adjust{
-          margin-bottom: 2%;
-        }
 .fh5co-social {
   position: relative;
   padding: 63px 0;
   /* background-image: url("../images/social-bckg.jpg"); */
   background-size: cover;
   background-position: center; }
-
   .fh5co-social::after {
     content: '';
     position: absolute;

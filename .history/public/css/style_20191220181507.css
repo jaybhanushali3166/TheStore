@@ -187,7 +187,6 @@ a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
-  
 }
 .row__inner {
   transition: 450ms -webkit-transform;
@@ -212,7 +211,7 @@ a:hover {
 }
 .tile__img {
   width: 100%;
-  height: 355px;
+  /* height: 355px; */
   border: 10px white;
   border-style: solid;
   -o-object-fit: cover;
@@ -1026,16 +1025,12 @@ img.hoverImages:hover {
       .fh5co-quotes p {
         width: 90%; } }
 
-        .adjust{
-          margin-bottom: 2%;
-        }
 .fh5co-social {
   position: relative;
   padding: 63px 0;
   /* background-image: url("../images/social-bckg.jpg"); */
   background-size: cover;
   background-position: center; }
-
   .fh5co-social::after {
     content: '';
     position: absolute;

@@ -1026,16 +1026,12 @@ img.hoverImages:hover {
       .fh5co-quotes p {
         width: 90%; } }
 
-        .adjust{
-          margin-bottom: 2%;
-        }
 .fh5co-social {
   position: relative;
   padding: 63px 0;
   /* background-image: url("../images/social-bckg.jpg"); */
   background-size: cover;
   background-position: center; }
-
   .fh5co-social::after {
     content: '';
     position: absolute;

@@ -79,23 +79,6 @@ p {
   overflow-x: hidden;
 } */
 
-.images{
-  width: 214px;
-  height: 241px;
-}
-.grid
-{ 
-  margin-top: 2%;
-  display: grid;
-  width:100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-row-gap: 1em;
-  grid-gap: 3rem;
-  cursor: pointer;
-
-}
-
 /* Photo grid */
 
 .row {
@@ -104,7 +87,6 @@ p {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
-  
 }
 
 /* Create four equal columns that sits next to each other */
@@ -184,10 +166,8 @@ a:hover {
   width: 100%;
 }
 .row {
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: scroll;
   width: 100%;
-  
 }
 .row__inner {
   transition: 450ms -webkit-transform;
@@ -212,9 +192,7 @@ a:hover {
 }
 .tile__img {
   width: 100%;
-  height: 355px;
-  border: 10px white;
-  border-style: solid;
+  /* height: 140.625px; */
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -617,13 +595,11 @@ img.hoverImages:hover {
     position: absolute;
     bottom: -18%; }
   .about-me-slider .slick-prev {
-    margin-bottom: 3%;
     left: 40%; }
     @media (max-width: 520px) {
       .about-me-slider .slick-prev {
         left: 34%; } }
   .about-me-slider .slick-next {
-    margin-bottom: 3%;
     right: 40%; }
     @media (max-width: 520px) {
       .about-me-slider .slick-next {
@@ -745,13 +721,7 @@ img.hoverImages:hover {
       margin-bottom: 60px; } }
 
 .books {
-  /* display: flex; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-row-gap: 1em;
-  grid-gap: 3rem;
-
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 70px; }
@@ -1009,13 +979,13 @@ img.hoverImages:hover {
   .fh5co-quotes .slick-arrow {
     bottom: -8%; }
   .fh5co-quotes .slick-prev {
-    
+    margin-bottom:8%;
     left: 45.5%; }
     @media (max-width: 1150px) {
       .fh5co-quotes .slick-prev {
         left: 34%; } }
   .fh5co-quotes .slick-next {
-    
+    margin-bottom:8%;
     right: 45.5%; }
     @media (max-width: 1150px) {
       .fh5co-quotes .slick-next {
@@ -1026,16 +996,12 @@ img.hoverImages:hover {
       .fh5co-quotes p {
         width: 90%; } }
 
-        .adjust{
-          margin-bottom: 2%;
-        }
 .fh5co-social {
   position: relative;
   padding: 63px 0;
   /* background-image: url("../images/social-bckg.jpg"); */
   background-size: cover;
   background-position: center; }
-
   .fh5co-social::after {
     content: '';
     position: absolute;
