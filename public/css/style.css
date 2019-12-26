@@ -104,6 +104,8 @@ p {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
+
+
   
 }
 
@@ -187,6 +189,7 @@ a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
+  height: 37rem;
   
 }
 .row__inner {
@@ -207,16 +210,18 @@ a:hover {
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  -webkit-transform-origin:-40% 100%;
+          transform-origin:-40% 100%;
 }
 .tile__img {
   width: 100%;
   height: 355px;
   border: 10px white;
   border-style: solid;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background:white ;
+  -o-object-fit: contain;
+     object-fit: contain;
+  
 }
 .tile__details {
   position: absolute;
@@ -268,8 +273,8 @@ a:hover {
   padding: 10px;
 }
 .row__inner:hover {
-  -webkit-transform: translate3d(-62.5px, 0, 0);
-          transform: translate3d(-62.5px, 0, 0);
+  -webkit-transform: translate3d(62.5px, 0, 0);
+          transform: translate3d(62.5px, 0, 0);
 }
 .row__inner:hover .tile {
   opacity: 0.3;
@@ -280,8 +285,8 @@ a:hover {
   opacity: 1;
 }
 .tile:hover ~ .tile {
-  -webkit-transform: translate3d(125px, 0, 0);
-          transform: translate3d(125px, 0, 0);
+  -webkit-transform: translate3d(200px, 0, 0);
+          transform: translate3d(200px, 0, 0);
 }
 
 
@@ -346,6 +351,15 @@ img.hoverImages:hover {
     .doc{
       height: 200px; } 
     }
+
+/* Rotate image */
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
     
 .universal-h2 {
   font-size: 48px;
@@ -568,6 +582,8 @@ img.hoverImages:hover {
   .brand-button:hover, .brand-button:focus {
     color: #777; }
 
+
+
 .fh5co-about-me {
   position: relative;
   margin: 193px 0 199px; }
@@ -757,7 +773,16 @@ img.hoverImages:hover {
   margin-bottom: 70px; }
   @media (max-width: 559px) {
     .books {
-      justify-content: space-around; } }
+      /* display: flex; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: auto;
+      grid-row-gap: 0.5em;
+      grid-gap: 0.5rem;
+    
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 70px; } }
 
 .single-book {
   margin-bottom: 20px;
@@ -1027,6 +1052,7 @@ img.hoverImages:hover {
         width: 90%; } }
 
         .adjust{
+          margin-top:10%;
           margin-bottom: 2%;
         }
 .fh5co-social {
@@ -1093,7 +1119,7 @@ img.hoverImages:hover {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 95px; }
   .footer-inner h5 {
     margin-bottom: 30px;
@@ -1108,7 +1134,9 @@ img.hoverImages:hover {
 
 .footer-info {
   width: 50%;
-  display: flex; }
+  display: flex; 
+  justify-content: center;
+}
   .footer-info .footer-info__left {
     margin-right: 45px; }
     .footer-info .footer-info__left img {
@@ -1131,11 +1159,24 @@ img.hoverImages:hover {
   @media (max-width: 1250px) {
     .footer-info {
       width: 100%;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+      .h5_footer{
+        margin-left: 0;
+      }
+      .conatiner_footer{
+        display:block;
+  
+      }
+      .contactone,.contacttwo{
+        margin-left: 0;
+      }
+     }
   @media (max-width: 620px) {
     .footer-info {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+
+    }
 
 .footer-contact-form {
   width: 50%; }
@@ -1181,7 +1222,22 @@ img.hoverImages:hover {
       background-color: #777; }
   @media (max-width: 1250px) {
     .footer-contact-form {
-      width: 100%; } }
+      width: 100%; } 
+      /* .conatiner_footer{
+        display: flex;
+        justify-content: center;
+                }
+        
+                .contactone,.contacttwo{
+                  margin-left: 20%;
+                }
+                /* .contacttwo{
+                  margin-right: 2%;
+                } */
+                /* .h5_footer{
+                  margin-left: 33%;
+                } */
+              } 
 
 .footer-bottom {
   padding: 25px 0;
@@ -1209,3 +1265,16 @@ img.hoverImages:hover {
       .footer-bottom-inner p {
         font-size: 14px;
         margin-bottom: 20px; } }
+
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        li::before {
+          color: #c18f59; /* or whatever color you prefer */
+        }
+
+        
+    
