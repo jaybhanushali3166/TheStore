@@ -1,2 +1,2 @@
-# TheStore
-An Angular based application to fetch and display content from AWS bucket and Downloadable content on one's local machine
+# GF Ajgaonkar
+A portfolio site with books and gallery of late Shri. GF Ajgaonkar
