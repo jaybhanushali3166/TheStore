@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "thestore-94c93"
+    "production": "g-f-ajgaonkar",
+    "default": "g-f-ajgaonkar"
   }
 }
