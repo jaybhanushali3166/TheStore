@@ -1,2 +1,2 @@
-# GF Ajgaonkar
-A portfolio site with books and gallery of late Shri. GF Ajgaonkar
+# An Angular Application with firebase to retrieve book information
+A portfolio site with books and collections
