@@ -294,11 +294,11 @@ a:hover {
 
   /* View More */
 
-.books .single-book{
+/* .books .single-book{
   display: none;
 
 
-}
+} */
 html {
 	scroll-behavior: smooth;
 }
